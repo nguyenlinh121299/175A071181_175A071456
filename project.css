@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.header 
+{
+    display: flex;
+}
+.header_right {
+    text-align: right;
+    padding: 20px 150px ;
+}
+.logo {
+    text-align: left;
+    margin: 5px;
+    padding-top: 20px;
+    padding-left: 10%;
+   
+ 
+}
+.header_right .topnav  { 
+   
+    padding-top: 10px;
+    padding-left: 100px;
+ 
+}
+.topnav a {
+    text-decoration: none;
+    margin: 10px;
+}
+.menu ul li  {
+    
+    display: inline-block;
+    text-decoration: none;
+
+}
+.menu nav a 
+{
+    font-size: medium;
+    margin: center;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: gray;
+}
+.thanhmenu
+{
+    width: auto;
+    height: 40px;
+    background-color: blue;
+}
+.main-menu
+{
+    margin-top: 20px;
+}
+.main-tuyensinh  a
+{
+    color: black;
+    text-decoration: none;
+}
+.main-tintuc a
+{
+    color: black;
+    text-decoration: none;
+}
