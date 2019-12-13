@@ -63,8 +63,30 @@ nav a:hover{
     color: black;
     text-decoration: none;
 }
-.main-tintuc a
+.main-tintuc a, .main-daotao a, .main-KHCN a
 {
     color: black;
     text-decoration: none;
+}
+.main-tintuc li a,.main-daotao li a, .main-KHCN li a,.main-tuyensinh li a
+{
+    text-decoration: none;
+}
+.main-SV .list-new li 
+{
+  margin-left:20px;
+}
+footer
+{
+    font-size: 14px;
+   
+}
+footer .infor-bottom
+{
+    height: 300px;
+   
+}
+.addresshn ,.addressmn
+{
+    padding-top: 30px;
 }
