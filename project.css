@@ -58,13 +58,49 @@ nav a:hover{
 {
     margin-top: 20px;
 }
-.main-tuyensinh  a
+.menu-main p a
+{
+    text-decoration: none;
+}
+.main-tuyensinh  a, .main-tintuc a,.main-daotao a, .main-KHCN a,.main-SV a
 {
     color: black;
     text-decoration: none;
 }
-.main-tintuc a
+
+.main-tintuc li a, .main-tuyensinh li a, .main-KHCN li a ,.main-daotao li a ,.main-SV li a
 {
-    color: black;
     text-decoration: none;
+}
+.main-KHCN p a ,.main-daotao p a, .main-SV p a,.main-tuyensinh p a
+{
+    text-decoration: none;
+}
+.main-SV .list-new li 
+{
+  margin-left:20px;
+}
+/* ======footer===========*/
+.img-infor 
+{
+    padding-top: 10px;
+    padding-left: 120px;
+}
+.img-infor a
+{
+    margin: 5px;
+}
+footer
+{
+    font-size: 14px;
+   
+}
+footer .infor-bottom
+{
+    height: 320px;
+   
+}
+.addresshn ,.addressmn
+{
+    padding-top: 30px;
 }
