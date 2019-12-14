@@ -7,24 +7,11 @@
 /*============ HEADER ===========*/
 
 .header {
-    display: flex;
+    margin: 25px;
 }
 
 .header_right {
     text-align: right;
-    padding: 20px 140px;
-}
-
-.logo {
-    text-align: left;
-    margin: 5px;
-    padding-top: 20px;
-    padding-left: 200px;
-}
-
-.header_right .topnav {
-    padding-top: 10px;
-    padding-left: 100px;
 }
 
 .topnav a {
@@ -34,21 +21,24 @@
 
 .search-form input {
     width: 300px;
-    border-radius: 10px;
-    padding: 6px 10px 6px 30px;
+    border: 1px solid rgb(149, 151, 151);
+    box-sizing: border-box;
+    border-radius: 1px;
+    padding: 4px 10px 4px 30px;
     outline: none;
     font-size: 12px;
     font-style: italic;
-    box-sizing: border-box;
+    background-color: aliceblue;
 }
 
 .search-form .search-btn {
-    border-radius: 10px;
-    padding: 4px;
+    border: 1px solid rgb(175, 174, 174);
+    border-radius: 1px;
+    padding: 3px;
     outline: none;
     font-size: 13px;
-    font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif UI;
+    font-family: Arial;
+    background-color: rgb(27, 198, 250);
 }
 
 .search-form {
@@ -59,20 +49,38 @@
 
 .search-icon {
     position: absolute;
-    top: 92px;
-    padding-left: 8px;
+    top: 60px;
+    padding-left: 20px;
 }
 
 
 /*============= MAIN ===========*/
+
+.slider {
+    background-color: rgb(59, 59, 160);
+}
+
+.menu-block {
+    box-sizing: border-box;
+    /* width: 1390px;
+    height: 487px; */
+}
+
+.nav-menu {
+    background-color: blue;
+}
+
+.nav-menu::after {
+    content: "";
+}
 
 .menu ul li {
     display: inline-block;
     text-decoration: none;
 }
 
-.menu nav a {
-    font-size: medium;
+.menu .nav-menu a {
+    font-size: 16px;
     margin: center;
     color: white;
     display: inline-block;
@@ -81,14 +89,13 @@
     text-decoration: none;
 }
 
-nav a:hover {
-    background-color: gray;
+.menu .nav-menu a:hover {
+    background-color: rgb(34, 147, 212);
 }
 
-.thanhmenu {
-    width: auto;
-    height: 40px;
-    background-color: blue;
+.menu-block .carousel .carousel-inner img {
+    /* width: 1390px;
+    height: 436px; */
 }
 
 .main-menu {
