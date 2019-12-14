@@ -3,41 +3,78 @@
     margin: 0;
     padding: 0;
 }
-.header 
-{
-    display: flex;
+.header {
+    margin: 25px;
 }
+
 .header_right {
     text-align: right;
-    padding: 20px 150px ;
 }
-.logo {
-    text-align: left;
-    margin: 5px;
-    padding-top: 20px;
-    padding-left: 10%;
-   
- 
-}
-.header_right .topnav  { 
-   
-    padding-top: 10px;
-    padding-left: 100px;
- 
-}
+
 .topnav a {
     text-decoration: none;
     margin: 10px;
 }
-.menu ul li  {
-    
+
+.search-form input {
+    width: 300px;
+    border: 1px solid rgb(149, 151, 151);
+    box-sizing: border-box;
+    border-radius: 1px;
+    padding: 4px 10px 4px 30px;
+    outline: none;
+    font-size: 12px;
+    font-style: italic;
+    background-color: aliceblue;
+}
+
+.search-form .search-btn {
+    border: 1px solid rgb(175, 174, 174);
+    border-radius: 1px;
+    padding: 3px;
+    outline: none;
+    font-size: 13px;
+    font-family: Arial;
+    background-color: rgb(27, 198, 250);
+}
+
+.search-form {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.search-icon {
+    position: absolute;
+    top: 60px;
+    padding-left: 20px;
+}
+/* =====main=======*/
+.slider {
+    background-color: rgb(59, 59, 160);
+}
+
+.menu-block {
+    box-sizing: border-box;
+    /* width: 1390px;
+    height: 487px; */
+}
+
+.nav-menu {
+    background-color: blue;
+}
+
+.nav-menu::after {
+    content: "";
+}
+
+.menu ul li {
     display: inline-block;
     text-decoration: none;
-
 }
-.menu nav a 
-{
-    font-size: medium;
+
+.menu .nav-menu a {
+    font-size: 16px;
     margin: center;
     color: white;
     display: inline-block;
@@ -45,14 +82,9 @@
     margin-top: 5px;
     text-decoration: none;
 }
-nav a:hover{
-    background-color: gray;
-}
-.thanhmenu
-{
-    width: auto;
-    height: 40px;
-    background-color: blue;
+
+.menu .nav-menu a:hover {
+    background-color: rgb(34, 147, 212);
 }
 .main-menu
 {
