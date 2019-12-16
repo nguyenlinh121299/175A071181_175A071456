@@ -102,6 +102,26 @@
 
 /* ======footer===========*/
 
+.infor {
+    background-color: #004eaf
+}
+
+.infor .bar-infor {
+    display: flex;
+    width: 100%;
+}
+
+
+/* .infor .bar-infor .left {
+    width: 80%;
+}
+
+.infor .bar-infor .right a {
+    float: left;
+    width: 20%;
+    text-align: center;
+} */
+
 .img-infor {
     padding-top: 10px;
     padding-left: 120px;
