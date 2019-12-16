@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="logo">
-                            <a href=""> <img src="./image/logo.png" alt=""></a>
+                            <a href=""> <img src="./image/logo.png" alt="" class="img-fluid"></a>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -31,12 +31,12 @@
                                 <a href="#"> <img src="./image/vi.jpg" alt=""> </a>
                                 <a href="#"> <img src="./image/en.jpg" alt=""> </a> <br>
                                 <hr width="100%" align="left">
-                                <div class="search">
-                                    <form action="" class="search-form">
-                                        <input type="text" placeholder="Tìm kiếm">
-                                        <button class="search-btn">Tìm</button>
-                                    </form>
-                                    <div class="search-icon"><i class="fas fa-search"></i></div>
+                                <div class="input-group md-form form-sm form-2 pl-0">
+                                    <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Search" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text lime lighten-2" id="basic-text1"><i
+                                                class="fas fa-search text-grey" aria-hidden="true"></i></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="menu-block">
                     <div class="menu">
-                        <nav class="nav-menu">
+                        <div class="nav-menu">
                             <ul>
                                 <li><a href="#"><i class="fas fa-home"></i></a>|</li>
                                 <li><a href="#">SINH VIÊN</a>|</li>
@@ -62,7 +62,7 @@
                                 <li><a href="#">ĐỐI NGOẠI</a>|</li>
                                 <li><a href="#">LIÊN HỆ</a></li>
                             </ul>
-                        </nav>
+                        </div>
                     </div>
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -98,67 +98,74 @@
         </div>
         <div class="menu-main">
             <div class="container">
-                <div class="main-menu">
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <img src="./image/main-menu1.png" width="50px" height="50px" alt="">
-                            <div>
-                                <p><a href="#">60 năm TLU </a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="./image/main-nenu2.jpg" width="50px" height="50px" style="margin-left: 40px;" alt="">
-                            <div>
-                                <p><a href="#"> Đảm bảo chất lượng</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="./image/main-menu3.jpg" width="50px" height="50px" alt="">
-                            <div>
-                                <p><a href="#">Thư viện </a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="./image/main-menu4.jpg" width="50px" height="50px" alt="">
-                            <div>
-                                <p><a href="#"> TLU mail</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="./image/main-menu5.jpg" width="50px" height="50px" style="margin-left: 15px;" alt="">
-                            <div>
-                                <p><a href="#"> lịch công tác</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="./image/main-menu6.jpg" width="50px" height="50px" style="margin-left: 15px;" alt="">
-                            <div>
-                                <p> <a href="#"> đăng kí học</a> </p>
-                            </div>
-                        </div>
+                <div class="content-menu">
+                    <div class="small">
+                        <a href="#">
+                            <div class="img"><img src="image/menu-img1.png" alt=""></div>
+                            <span class="content-img">60 năm TLU</span>
+                        </a>
+                    </div>
+                    <div class="small">
+                        <a href="#">
+                            <div class="img"><img src="image/menu-img2.jpg" alt=""></div>
+                            <span class="content-img">Đảm bảo chất lượng</span>
+                        </a>
+                    </div>
+                    <div class="small">
+                        <a href="#">
+                            <div class="img"><img src="image/menu-img3.jpg" alt=""></div>
+                            <span class="content-img">Khoa, Viện</span>
+                        </a>
+                    </div>
+                    <div class="small">
+                        <a href="#">
+                            <div class="img"><img src="image/menu-img4.jpg" alt=""></div>
+                            <span class="content-img">Thư viện</span>
+                        </a>
+                    </div>
+                    <div class="small">
+                        <a href="#">
+                            <div class="img"><img src="image/menu-img5.jpg" alt=""></div>
+                            <span class="content-img">TLU Mail</span>
+                        </a>
+                    </div>
+                    <div class="small">
+                        <a href="#">
+                            <div class="img"><img src="image/menu-img6.jpg" alt=""></div>
+                            <span class="content-img">Lịch công tác</span>
+                        </a>
+                    </div>
+                    <div class="small">
+                        <a href="#">
+                            <div class="img"><img src="image/menu-img7.jpg" alt=""></div>
+                            <span class="content-img">Đăng ký học</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <hr width="100%" align="center">
-        <div class="main-tintuc">
+        <div class="main-news">
             <div class="container">
-                <div>
-                    <span style="color: rgb(7, 38, 131); font-size: 20px; font-weight: bold;">TIN TỨC </span>
-                    <span style="color: rgb(7, 38, 131); font-size: 20px; font-weight: bold; margin-left: 800px;">THÔNG
-                            BÁO </span>
+                <div class="row _1">
+                    <div class="col-md-9">
+                        <h4>TIN TỨC</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>THÔNG BÁO</h4>
+                    </div>
                 </div>
-                <div class="row" style="margin-top: 20px;">
+                <div class="row _2">
                     <div class="col-md-5">
-                        <img src="./image/main-top.jpg" width="415px" height="250px" alt="">
-                        <a href="#" style="font-weight:bold ">
-                                Lãnh đạo Trường Đại học Thủy lợi nhận giải thưởng "Giọt hồng năm 2019"</a>
+                        <img src="image/main-top.jpg" width="415px" height="250px" alt="" class="img-fluid">
+                        <p><a href="#" style="font-weight:bold ">
+                                    Lãnh đạo Trường Đại học Thủy lợi nhận giải thưởng "Giọt hồng năm 2019"</a></p>
                         <p>Ngày 04/12/2019, tại Hà Nội, Viện Huyết học - Truyền máu Trung ương tổ chức Lễ trao giải thưởng Giọt Hồng và Gặp mặt nhà quản lý năm 2019. Đây</p>
                     </div>
                     <div class="col-md-4">
                         <ul>
                             <li> <a href="#"> Đội tuyển Olympic Tin học sinh viên tạo dấu ấn tại kỳ thi toàn quốc
-                                        lần thứ 28</a> </li>
+                                            lần thứ 28</a> </li>
                             <hr>
                             <li><a href="#"> Hai doanh nhân Việt lọt top 10 nhà từ thiện tuyệt vời nhất châu Á</a>
                             </li>
@@ -167,17 +174,17 @@
                             </li>
                             <hr>
                             <li><a href="#"> Tân Giám đốc Sở Nông nghiệp và PTNT tỉnh Nghệ An là cựu sinh viên
-                                        Trường Đại học Thủy lợi</a> </li>
+                                            Trường Đại học Thủy lợi</a> </li>
                             <hr>
                             <li><a href="#"> Lãnh đạo Trường Đại học Thủy lợi nhận giải thưởng "Giọt hồng năm
-                                        2019"</a> </li>
+                                            2019"</a> </li>
                             <hr>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 notification">
                         <ul>
                             <li><a href="#"> Danh sách sinh viên được hưởng trợ cấp xã hội, miễn giảm học phí và hỗ
-                                        trợ chi phí học tập kỳ I (năm học 2019-2020)</a></li>
+                                    trợ chi phí học tập kỳ I (năm học 2019-2020)</a></li>
                             <hr>
                             <li><a href="#">Thông báo seminar: Hướng dẫn cách đăng ký học bổng Tiến sỹ tại Mỹ</a>
                             </li>
@@ -187,29 +194,29 @@
                             <li><a href="#">Thông báo tuyển sinh đi học tại Hung-ga-ri năm 2020</a></li>
                             <hr>
                             <li><a href="#"> Kế hoạch tổ chức ngày hội việc làm và lễ tốt nghiệp cho sinh viên hệ
-                                        chính quy kỳ I, năm học 2019-2020</a></li>
+                                    chính quy kỳ I, năm học 2019-2020</a></li>
                             <hr>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main-tuyensinh" style="background-color: silver;">
+        <div class="main-admissions">
             <div class="container">
                 <div style="margin: 20px;">
                     <span style="color: rgb(7, 38, 131); font-size: 20px; font-weight: bold;">TUYỂN SINH </span>
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="./image/main-TS.png" alt="">
+                        <img src="image/main-TS.png" alt="" class="img-fluid">
                         <p><a href="#"> Lịch thi tuyến sinh đào tạo trình độ thạc sĩ năm...</a></p>
                     </div>
                     <div class="col-md-3">
-                        <img src="./image/main-TS2.png" alt="">
+                        <img src="image/main-TS2.png" alt="" class="img-fluid">
                         <p><a href="#"> Lịch học ôn thi tuyển sinh thạc sĩ năm 2019</a></p>
                     </div>
                     <div class="col-md-3">
-                        <img src="./image/main-ts3.png" width="260px" alt="">
+                        <img src="image/main-ts3.png" width="260px" alt="" class="img-fluid">
                         <p><a href="#"> Thông báo các môn thi tuyển sinh trong đào tạo...</a></p>
                     </div>
                     <div class="col-md-3">
@@ -225,8 +232,69 @@
         </div>
     </main>
     <footer>
-        fghjakoihugfdgh
-    </footer>
+        <footer>
+            <div class="infor" style="background-color: #004eaf;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <p style="color: white; font-size:23px ;">&copy; 2019 -TRƯỜNG ĐẠI HỌC THỦY LỢI </p>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-infor">
+                                <a href=""><img src="image/icon-fb.png" alt="" style="height: 30px; width: 30px;"></a>
+                                <a href=""><img src="image/icon-tw.png" alt="" style="height: 30px; width: 30px;"></a>
+                                <a href=""><img src="image/icon-yt.png" alt="" style="height: 30px; width: 30px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infor-bottom" style="background-color: #001373; ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="maps">
+                                    <a href=""><img src="image/TLU-map.png" style="padding-top: 50px;" alt="" style="height: 160px; width: 340px;"></a>
+                                </div>
+                                <p style="font-weight: bold; color: white; padding-top: 50px;">
+                                    Số người đang online : 3648 <br> Lượt truy cập : 3685747</p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="addresshn">
+                                    <div class="hanoi">
+                                        <form style="color: white;">
+                                            TRƯỜNG ĐẠI HỌC THỦY LỢI <br> Địa chỉ :175 Tây Sơn, Đống Đa, Hà Nội <br> Điện thoại:(024)38522201 -Fax: (024)35633351 <br> Email:phonghcth@tlu.edu.vn
+                                        </form>
+                                    </div>
+                                    <hr width="100%" color="white">
+                                    <div class="hungyen">
+                                        <form style="color: white;">
+                                            TRƯỜNG ĐẠI HỌC THỦY LỢI - CƠ SỞ 2 <br> Phường An Thạnh - TX Thuận An - Tỉnh Bình Dương <br> Điện thoại: (84).650.3748 620 <br> Fax:(84).650.3833 489 <br>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="addressmn">
+                                    <div class="hcm" style="color: white;">
+                                        TRƯỜNG ĐẠI HỌC THỦY LỢI - CƠ SỞ 2 Địa chỉ : Số 2 - Đường Trường Sa - P.17 - Q.Bình Thạnh - Tp.Hồ Chí Minh Điện thoại: (84)028.38 400 532 - Fax: (84)028.38 400542 Email: cs2@tlu.edu.vn
+                                    </div>
+                                    <hr width="100%" color="white">
+                                    <div class="viendaotao" style="color: white;">
+                                        VIỆN ĐÀO TẠO VÀ KHOA HỌC ỨNG DỤNG MIỀN TRUNG Địa chỉ: Số 115 Trần Phú, Thành phố Phan Rang, Tỉnh Ninh Thuận Điện thoại: 02593.823 027, 02593.823 028 Email: trungtamdh2@tlu.edu.vn
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
+</footer>
 </body>
 
 </html>
