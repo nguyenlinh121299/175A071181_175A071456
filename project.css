@@ -140,3 +140,28 @@ footer .footer-top img
     height: 30px;
     margin-left: 10px;
 }
+/* ===trang sinh vien==*/
+.notifi-students .row p a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.notifi-students
+{
+    margin-top: 20px;
+   
+}
+.students-HB .row a
+{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+.students-HB
+{
+   height: auto;
+    padding: 10px;
+    margin: 50px;
+}
