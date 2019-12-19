@@ -1,8 +1,8 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
+
 .header {
     margin: 25px;
 }
@@ -15,19 +15,18 @@
     text-decoration: none;
     margin: 10px;
 }
-.logo
-{
-    padding: 20px 0px;
-}
-.header_right
-{
+
+.logo {
     padding: 20px 0px;
 }
 
-
+.header_right {
+    padding: 20px 0px;
+}
 
 
 /* =====main=======*/
+
 .slider {
     background-color: rgb(59, 59, 160);
 }
@@ -64,104 +63,192 @@
 .menu .nav-menu a:hover {
     background-color: rgb(34, 147, 212);
 }
+
+
 /*main menu */
-.menu-main .content-menu-main
-{
+
+.menu-main .content-menu-main {
     padding: 15px 0px;
     display: flex;
     width: 100%;
 }
-.menu-main .content-menu-main .small
-{
+
+.menu-main .content-menu-main .small {
     width: 14.2%;
     text-align: center;
 }
-.menu-main .content-menu-main .small .small-img
-{
+
+.menu-main .content-menu-main .small .small-img {
     margin: auto;
     width: 36px;
-    height: 25px; 
-}
-.menu-main .content-menu-main a
-{
-    text-decoration: none;
-}
-.small-img img
-{
-    width: 100%;
-    height: 100%;;
+    height: 25px;
 }
 
-.news-notifi .news-right .menu-news-right ul li a
-{
+.menu-main .content-menu-main a {
+    text-decoration: none;
+}
+
+.small-img img {
+    width: 100%;
+    height: 100%;
+    ;
+}
+
+.news-notifi .news-right .menu-news-right ul li a {
     display: block;
     padding: 10px 0px;
 }
-.news-notifi a,.admissions a, .educate a, .technology a ,.students a
-{
- text-decoration: none;
- color: black;
-}
-.news-notifi li a,.admissions li a, .educate li a, .technology li a,.students li a
-{
+
+.news-notifi a,
+.admissions a,
+.educate a,
+.technology a,
+.students a {
     text-decoration: none;
+    color: black;
 }
-.news-notifi p a,.admissions p a, .educate p a, .technology p a
-{
+
+.news-notifi li a,
+.admissions li a,
+.educate li a,
+.technology li a,
+.students li a {
     text-decoration: none;
 }
 
-.admissions
-{
-    padding: 15px 0px;
-    background:rgb(228, 224, 224);
+.news-notifi p a,
+.admissions p a,
+.educate p a,
+.technology p a {
+    text-decoration: none;
 }
+
+.admissions {
+    padding: 15px 0px;
+    background: rgb(228, 224, 224);
+}
+
+
 /* ======footer===========*/
-footer .footer-bottom
-{
+
+footer .footer-bottom {
     padding: 20px 0px;
-    background:blue;
+    background: blue;
     color: white;
     font-size: 12px;
 }
-footer .footer-top
-{
+
+footer .footer-top {
     padding: 12px 0px;
-    background:rgba(2,139,255,1)
+    background: rgba(2, 139, 255, 1)
 }
-footer .footer-top h3
-{
+
+footer .footer-top h3 {
     font-size: 26px;
     color: white;
 }
-footer .footer-top img
-{
+
+footer .footer-top img {
     width: 30px;
     height: 30px;
     margin-left: 10px;
 }
+
+
 /* ===trang sinh vien==*/
-.notifi-students .row p a
-{
+
+.notifi-students .row p a {
     color: black;
     text-decoration: none;
     font-weight: bolder;
 }
-.notifi-students
-{
+
+.notifi-students {
     margin-top: 20px;
-   
 }
-.students-HB .row a
-{
+
+.students-HB .row a {
     color: black;
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
 }
-.students-HB
-{
-   height: auto;
+
+.students-HB {
+    height: auto;
     padding: 10px;
     margin: 50px;
 }
+
+
+/*========= News========*/
+
+.block-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.left-block p.news-title a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.list-news {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.list-news ul li {
+    list-style: ">";
+    padding: 15px;
+}
+
+.list-news ul li:hover {
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.list-news ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.news-content {
+    display: flex;
+    width: 100%;
+    height: 190px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.news-main .news-content .n-left {
+    width: 25%;
+}
+
+.news-main .news-content .n-right {
+    width: 70%;
+}
+
+.news-main .news-content .n-right h4.title a {
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+}
+
+.news-main .news-content .n-right h4.title a:hover {
+    color: rgb(22, 22, 121);
+}
+
+.news-main .news-content img {
+    width: 210px;
+    height: 126px;
+}
+
+.news-main .news-content .n-right p.text-right a {
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+
+/*========== TUYEN SINH ==========*/
