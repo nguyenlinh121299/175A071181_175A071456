@@ -1,99 +1,32 @@
-* {
+*
+{
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
 .header {
     margin: 25px;
-||||||| e15d118
-.header 
-{
-    display: flex;
-=======
-
-
-/*============ HEADER ===========*/
-
-.header {
-    display: flex;
->>>>>>> bc94e5c163ebde4b83eec5c54d62d2abff0cec6e
 }
 
 .header_right {
     text-align: right;
-<<<<<<< HEAD
-||||||| e15d118
-    padding: 20px 150px ;
-}
-.logo {
-    text-align: left;
-    margin: 5px;
-    padding-top: 20px;
-    padding-left: 10%;
-   
- 
-}
-.header_right .topnav  { 
-   
-    padding-top: 10px;
-    padding-left: 100px;
- 
-=======
-    padding: 20px 140px;
-}
-
-.logo {
-    text-align: left;
-    margin: 5px;
-    padding-top: 20px;
-    padding-left: 200px;
-}
-
-.header_right .topnav {
-    padding-top: 10px;
-    padding-left: 100px;
->>>>>>> bc94e5c163ebde4b83eec5c54d62d2abff0cec6e
 }
 
 .topnav a {
     text-decoration: none;
     margin: 10px;
 }
-<<<<<<< HEAD
-
-.search-form input {
-    width: 300px;
-    border: 1px solid rgb(149, 151, 151);
-    box-sizing: border-box;
-    border-radius: 1px;
-    padding: 4px 10px 4px 30px;
-    outline: none;
-    font-size: 12px;
-    font-style: italic;
-    background-color: aliceblue;
+.logo
+{
+    padding: 20px 0px;
+}
+.header_right
+{
+    padding: 20px 0px;
 }
 
-.search-form .search-btn {
-    border: 1px solid rgb(175, 174, 174);
-    border-radius: 1px;
-    padding: 3px;
-    outline: none;
-    font-size: 13px;
-    font-family: Arial;
-    background-color: rgb(27, 198, 250);
-}
 
-.search-form {
-    position: relative;
-    top: 0;
-    left: 0;
-}
 
-.search-icon {
-    position: absolute;
-    top: 60px;
-    padding-left: 20px;
-}
+
 /* =====main=======*/
 .slider {
     background-color: rgb(59, 59, 160);
@@ -114,63 +47,12 @@
 }
 
 .menu ul li {
-||||||| e15d118
-.menu ul li  {
-    
-=======
-
-.search-form input {
-    width: 300px;
-    border-radius: 10px;
-    padding: 6px 10px 6px 30px;
-    outline: none;
-    font-size: 12px;
-    font-style: italic;
-    box-sizing: border-box;
-}
-
-.search-form .search-btn {
-    border-radius: 10px;
-    padding: 4px;
-    outline: none;
-    font-size: 13px;
-    font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif UI;
-}
-
-.search-form {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.search-icon {
-    position: absolute;
-    top: 92px;
-    padding-left: 8px;
-}
-
-
-/*============= MAIN ===========*/
-
-.menu ul li {
->>>>>>> bc94e5c163ebde4b83eec5c54d62d2abff0cec6e
     display: inline-block;
     text-decoration: none;
 }
-<<<<<<< HEAD
 
 .menu .nav-menu a {
     font-size: 16px;
-||||||| e15d118
-.menu nav a 
-{
-    font-size: medium;
-=======
-
-.menu nav a {
-    font-size: medium;
->>>>>>> bc94e5c163ebde4b83eec5c54d62d2abff0cec6e
     margin: center;
     color: white;
     display: inline-block;
@@ -178,96 +60,108 @@
     margin-top: 5px;
     text-decoration: none;
 }
-<<<<<<< HEAD
 
 .menu .nav-menu a:hover {
     background-color: rgb(34, 147, 212);
-||||||| e15d118
-nav a:hover{
-    background-color: gray;
 }
-.thanhmenu
+/*main menu */
+.menu-main .content-menu-main
 {
-    width: auto;
-    height: 40px;
-    background-color: blue;
-=======
-
-nav a:hover {
-    background-color: gray;
+    padding: 15px 0px;
+    display: flex;
+    width: 100%;
 }
-
-.thanhmenu {
-    width: auto;
-    height: 40px;
-    background-color: blue;
->>>>>>> bc94e5c163ebde4b83eec5c54d62d2abff0cec6e
-}
-
-.main-menu {
-    margin-top: 20px;
-}
-<<<<<<< HEAD
-.menu-main p a
+.menu-main .content-menu-main .small
 {
-||||||| e15d118
-.main-tuyensinh  a
-{
-    color: black;
-=======
-
-.main-tuyensinh a {
-    color: black;
->>>>>>> bc94e5c163ebde4b83eec5c54d62d2abff0cec6e
-    text-decoration: none;
+    width: 14.2%;
+    text-align: center;
 }
-<<<<<<< HEAD
-.main-tuyensinh  a, .main-tintuc a,.main-daotao a, .main-KHCN a,.main-SV a
+.menu-main .content-menu-main .small .small-img
 {
-||||||| e15d118
-.main-tintuc a
-{
-=======
-
-.main-tintuc a {
->>>>>>> bc94e5c163ebde4b83eec5c54d62d2abff0cec6e
-    color: black;
-    text-decoration: none;
+    margin: auto;
+    width: 36px;
+    height: 25px; 
 }
-
-.main-tintuc li a, .main-tuyensinh li a, .main-KHCN li a ,.main-daotao li a ,.main-SV li a
+.menu-main .content-menu-main a
 {
     text-decoration: none;
 }
-.main-KHCN p a ,.main-daotao p a, .main-SV p a,.main-tuyensinh p a
+.small-img img
+{
+    width: 100%;
+    height: 100%;;
+}
+
+.news-notifi .news-right .menu-news-right ul li a
+{
+    display: block;
+    padding: 10px 0px;
+}
+.news-notifi a,.admissions a, .educate a, .technology a ,.students a
+{
+ text-decoration: none;
+ color: black;
+}
+.news-notifi li a,.admissions li a, .educate li a, .technology li a,.students li a
 {
     text-decoration: none;
 }
-.main-SV .list-new li 
+.news-notifi p a,.admissions p a, .educate p a, .technology p a
 {
-  margin-left:20px;
+    text-decoration: none;
+}
+
+.admissions
+{
+    padding: 15px 0px;
+    background:rgb(228, 224, 224);
 }
 /* ======footer===========*/
-.img-infor 
+footer .footer-bottom
 {
-    padding-top: 10px;
-    padding-left: 120px;
+    padding: 20px 0px;
+    background:blue;
+    color: white;
+    font-size: 12px;
 }
-.img-infor a
+footer .footer-top
 {
-    margin: 5px;
+    padding: 12px 0px;
+    background:rgba(2,139,255,1)
 }
-footer
+footer .footer-top h3
 {
-    font-size: 14px;
+    font-size: 26px;
+    color: white;
+}
+footer .footer-top img
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+/* ===trang sinh vien==*/
+.notifi-students .row p a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.notifi-students
+{
+    margin-top: 20px;
    
 }
-footer .infor-bottom
+.students-HB .row a
 {
-    height: 320px;
-   
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
 }
-.addresshn ,.addressmn
+.students-HB
 {
-    padding-top: 30px;
+   height: auto;
+    padding: 10px;
+    margin: 50px;
 }
