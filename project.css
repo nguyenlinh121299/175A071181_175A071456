@@ -252,3 +252,33 @@ footer .footer-top img {
 
 
 /*========== TUYEN SINH ==========*/
+
+.block-up h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+
+.block-down {
+    height: 450px;
+}
+
+.content-ts ul.list-group a.inner-link {
+    font-family: segoe UI;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.content-ts ul.list-group p.desc-short {
+    font-family: segoe UI;
+    font-size: 14px;
+}
+
+.content-ts ul.list-group p.text-right a.more {
+    text-decoration: none;
+    font-family: segoe UI;
+    font-size: 12px;
+    font-style: italic;
+    color: black;
+}
