@@ -221,21 +221,13 @@ footer .footer-top img {
     justify-content: space-between;
 }
 
-.news-main .news-content .n-left {
-    width: 25%;
-}
-
-.news-main .news-content .n-right {
-    width: 70%;
-}
-
-.news-main .news-content .n-right h4.title a {
+.news-main .n-right h4.title a {
     text-decoration: none;
     color: black;
-    font-size: 21px;
+    font-size: 22px;
 }
 
-.news-main .news-content .n-right h4.title a:hover {
+.news-main .n-right h4.title a:hover {
     color: rgb(22, 22, 121);
 }
 
@@ -244,7 +236,7 @@ footer .footer-top img {
     height: 126px;
 }
 
-.news-main .news-content .n-right p.text-right a {
+.news-main .n-right p.text-right a {
     text-align: right;
     text-decoration: none;
     color: black;
