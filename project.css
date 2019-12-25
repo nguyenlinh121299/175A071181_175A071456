@@ -217,6 +217,7 @@ footer .footer-top img {
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .news-main .news-content .n-left {
    
 }
@@ -226,12 +227,15 @@ footer .footer-top img {
 }
 
 .news-main .news-content .n-right h4.title a {
+=======
+.news-main .n-right h4.title a {
+>>>>>>> 3347d2110b28ad6a6d427b025c3ece867485fc1c
     text-decoration: none;
     color: black;
-    font-size: 21px;
+    font-size: 22px;
 }
 
-.news-main .news-content .n-right h4.title a:hover {
+.news-main .n-right h4.title a:hover {
     color: rgb(22, 22, 121);
 }
 h4 a
@@ -245,7 +249,7 @@ h4 a
     text-decoration: none;
 }
 
-.news-main .news-content .n-right p.text-right a {
+.news-main .n-right p.text-right a {
     text-align: right;
     text-decoration: none;
     color: black;
