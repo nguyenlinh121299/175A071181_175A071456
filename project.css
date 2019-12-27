@@ -239,3 +239,11 @@ h4 a {
 
 
 /*========= News ==========*/
+
+.news-b .cont-news .summary p {
+    font-size: 18px;
+}
+
+.news-b .cont-news .description p {
+    font-size: 18px;
+}
