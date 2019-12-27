@@ -33,7 +33,7 @@
 }
 
 .nav-menu {
-    background-color: blue;
+    background-color: rgb(63, 63, 189);
 }
 
 .nav-menu::after {
@@ -57,6 +57,7 @@
 
 .menu .nav-menu a:hover {
     background-color: rgb(34, 147, 212);
+    width: max-content;
 }
 
 
