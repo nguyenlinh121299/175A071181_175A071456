@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>quản lí điểm sinh viên-thông tin khoa </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_left">
+            <H3>HỆ THỐNG QUẢN LÝ- ĐẠI HỌC THỦY LỢI</H3>
+        </div>
+    </header>
+    <main>
+        <div class="menu_loyal-points">
+            <div class="container-fluid">
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html">Quản lí giảng viên </a></li>
+                        <li><a href="student.html">Quản lí sinh viên</a></li>
+                        <li><a href="point.html">quản lý bảng điểm</a></li>
+                        <li><a href="news.html">quản lý tin tức </a></li>
+                        <li><a href="class.html">quản lý lớp học </a></li>
+                       
+                        <li><a href="../project.html">trang chủ </a></li>
+                        <li><a href="#"> đăng xuất </a></li>
+                    </ul>
+                </div>
+                <div class="faculty">
+                    <div class="title">
+                        <h2>Quản lí giảng viên </h2>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <div class="btn_themmoi">
+                                <a href="add-teacher.html">
+                                    <button type="submit" style="background-color:rgb(68, 233, 76)"> + thêm mới </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="btn_timkiem">
+                                <form action=”#”>
+                                    Tên giảng viên: <input name="user" type="text" />
+                                    mã giảng viên: <input name="pass" type="text" />
+                                    môn dạy: <input name="name" type=”text” />
+                                    <input type="submit" value="tìm" />
+                                    </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="table_teacher">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">sô thứ tự</th>
+                                    <th scope="col">mã giảng viên</th>
+                                    <th scope="col">họ tên</th>
+                                    <th scope="col">dạy môn</th>
+
+                                    <th scope="col">email</th>
+                                    <th scope="col">action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>175.tlu</td>
+                                    <td>nguyễn văn dũng</td>
+                                    <td>công nghệ web</td>
+                                    <td>dung75cse.tlu.vn</td>
+                                    <td><button type="button" class="btn btn-primary"><img src="../image/delete.png"
+                                                width="15px" height="15px" alt=""></button>
+                                        <button type="button" class="btn btn-info"><img src="../image/repair2.png"
+                                                width="15px" height="15px" alt=""></button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>175.tlu</td>
+                                    <td>nguyễn văn dũng</td>
+                                    <td>công nghệ web</td>
+                                    <td>dung75cse.tlu.vn</td>
+                                    <td><button type="button" class="btn btn-primary"><img src="../image/delete.png"
+                                                width="15px" height="15px" alt=""></button>
+                                        <button type="button" class="btn btn-info"><img src="../image/repair2.png"
+                                                width="15px" height="15px" alt=""></button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>175.tlu</td>
+                                    <td>nguyễn văn dũng</td>
+                                    <td>công nghệ web</td>
+                                    <td>dung75cse.tlu.vn</td>
+                                    <td><button type="button" class="btn btn-primary"><img src="../image/delete.png"
+                                                width="15px" height="15px" alt=""></button>
+                                        <button type="button" class="btn btn-info"><img src="../image/repair2.png"
+                                                width="15px" height="15px" alt=""></button>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>
