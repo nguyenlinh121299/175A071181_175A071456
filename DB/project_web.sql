@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 28, 2019 lúc 05:06 AM
+-- Thời gian đã tạo: Th12 28, 2019 lúc 04:56 PM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -31,8 +31,33 @@ SET time_zone = "+00:00";
 CREATE TABLE `class` (
   `id_class` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
   `id_subject` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `year` date NOT NULL,
-  `semester` int(2) NOT NULL
+  `semester` int(2) NOT NULL,
+  `date_start` date NOT NULL,
+  `date_end` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `department`
+--
+
+CREATE TABLE `department` (
+  `id_department` int(10) NOT NULL,
+  `name_department` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id_class` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `majors`
+--
+
+CREATE TABLE `majors` (
+  `id_majors` int(11) NOT NULL,
+  `majors_name` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -56,8 +81,10 @@ CREATE TABLE `news` (
 CREATE TABLE `scores` (
   `id_subject` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   `id_student` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `score` double NOT NULL,
-  `total_scores` double NOT NULL
+  `score1` double NOT NULL,
+  `score2` double NOT NULL,
+  `total_scores` double NOT NULL,
+  `score_convert` text COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -92,7 +119,8 @@ INSERT INTO `student` (`id_student`, `name`, `email`, `id_class`) VALUES
 CREATE TABLE `subject` (
   `id_subject` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name_sub` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `name_teacher` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
+  `id_teacher` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id_majors` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -134,6 +162,19 @@ ALTER TABLE `class`
   ADD KEY `id_subject` (`id_subject`);
 
 --
+-- Chỉ mục cho bảng `department`
+--
+ALTER TABLE `department`
+  ADD PRIMARY KEY (`id_department`),
+  ADD KEY `id_class` (`id_class`);
+
+--
+-- Chỉ mục cho bảng `majors`
+--
+ALTER TABLE `majors`
+  ADD PRIMARY KEY (`id_majors`);
+
+--
 -- Chỉ mục cho bảng `news`
 --
 ALTER TABLE `news`
@@ -156,7 +197,9 @@ ALTER TABLE `student`
 -- Chỉ mục cho bảng `subject`
 --
 ALTER TABLE `subject`
-  ADD PRIMARY KEY (`id_subject`);
+  ADD PRIMARY KEY (`id_subject`),
+  ADD KEY `id_teacher` (`id_teacher`),
+  ADD KEY `id_majors` (`id_majors`);
 
 --
 -- Chỉ mục cho bảng `teacher`
@@ -175,6 +218,12 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT cho bảng `department`
+--
+ALTER TABLE `department`
+  MODIFY `id_department` int(10) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT cho bảng `news`
 --
 ALTER TABLE `news`
@@ -191,11 +240,24 @@ ALTER TABLE `class`
   ADD CONSTRAINT `class_ibfk_2` FOREIGN KEY (`id_subject`) REFERENCES `subject` (`id_subject`);
 
 --
+-- Các ràng buộc cho bảng `department`
+--
+ALTER TABLE `department`
+  ADD CONSTRAINT `department_ibfk_1` FOREIGN KEY (`id_class`) REFERENCES `class` (`id_class`);
+
+--
 -- Các ràng buộc cho bảng `scores`
 --
 ALTER TABLE `scores`
   ADD CONSTRAINT `scores_ibfk_1` FOREIGN KEY (`id_student`) REFERENCES `student` (`id_student`),
   ADD CONSTRAINT `scores_ibfk_2` FOREIGN KEY (`id_subject`) REFERENCES `subject` (`id_subject`);
+
+--
+-- Các ràng buộc cho bảng `subject`
+--
+ALTER TABLE `subject`
+  ADD CONSTRAINT `subject_ibfk_1` FOREIGN KEY (`id_teacher`) REFERENCES `teacher` (`id_teacher`),
+  ADD CONSTRAINT `subject_ibfk_2` FOREIGN KEY (`id_majors`) REFERENCES `majors` (`id_majors`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
