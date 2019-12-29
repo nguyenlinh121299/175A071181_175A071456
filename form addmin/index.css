@@ -73,3 +73,64 @@
      margin-top: 30px;
    }
    
+   /*====addmin-teacher======*/
+  .header_left
+  {
+    height: 80px;
+    background-color: rgb(51, 51, 233);
+  }
+  body
+  {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+  }
+  .login_teacher
+  {
+    width: 320px;
+    height: 420px;
+    background: rgb(21, 184, 206);
+    color: rgb(64, 53, 228);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  h1
+  {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+  }
+  .login_teacher p 
+  {
+    font-weight: bold;
+  }
+  .login_teacher input 
+  {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .login_teacher a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color:black;
+  }
+  .login_teacher a:hover
+  {
+    color: #ffc107;
+  }
+
+   footer
+   {
+     margin-top: 200px;
+     background-color: darkgray;
+     height: 50px;
+   }
