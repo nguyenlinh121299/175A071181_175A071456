@@ -1,49 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    include('php/header.php')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tin tức & thông báo</title>
-    <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-</head>
 
-<body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="logo">
-                        <a href="project.html"> <img src="./image/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="header_right">
-                        <div class="topnav">
-                            <a href="#"> (+) </a>
-                            <a href="./file_login/login.html"> login </a>
-                            <a href="./file_login/dangky.html"> Sign Up </a>
-                            <a href="#"> <img src="./image/vi.jpg" alt=""> </a>
-                            <a href="#"> <img src="./image/en.jpg" alt=""> </a> <br>
-                            <hr width="100%" align="left">
-                            <div class="input-group md-form form-sm form-2 pl-0">
-                                <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
-                                <div class="input-group-append">
-                                    <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
-                      aria-hidden="true"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </header>
+?>
     <!--===========main==============-->
     <main>
         <div class="slider">
@@ -92,18 +51,18 @@
                                 <div class="col-md-3">
                                     <div class="n-left">
                                         <div class="img">
-                                            <a href="news.html"><img src="image/1_1.jpg" alt="" class="img-fluid"></a>
+                                            <a href="new.php"><img src="image/1_1.jpg" alt="" class="img-fluid"></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-9">
                                     <div class="n-right">
                                         <h4 class="title">
-                                            <a href="news.html">Kế hoạch bổ nhiệm chức danh giáo sư, phó giáo sư năm 2019</a>
+                                            <a href="new.html">Kế hoạch bổ nhiệm chức danh giáo sư, phó giáo sư năm 2019</a>
                                         </h4>
                                         <p>(TLU) – Năm 2019, Hội đồng Giáo sư Nhà nước đã công nhận đạt tiêu chuẩn chức danh Giáo sư cho 73 nhà giáo và đạt tiêu...</p>
                                         <p class="text-right">
-                                            <a href="news.html">
+                                            <a href="new.html">
                                                 <em>> Xem chi tiết</em>
                                             </a>
                                         </p>
@@ -328,67 +287,7 @@
 
     </main>
     <!--  ==========footer========-->
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <h3>&copy; 2019- TRƯỜNG ĐẠI HỌC THỦY LỢI</h3>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="contact">
-                            <a href=""><img src="image/icon-fb.png" alt=""></a>
-                            <a href=""><img src="image/icon-tw.png" alt=""></a>
-                            <a href=""><img src="image/icon-yt.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="map">
-                            <img src="image/map1.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="address1">
-                            <p>
-                                TRƯỜNG ĐẠI HỌC THỦY LỢI <br> Địa chỉ : 175 TÂY SƠN, ĐỐNG ĐA, HÀ NỘI.<br> Điện thoại: (024) 3852 2201 - Fax: (024) 3563 3351<br> Email: phonghcth@tlu.edu.vn<br>
-                            </p>
-                        </div>
-                        <hr color="white">
-                        <div class="address1">
-                            <p>
-                                TRƯỜNG ĐẠI HỌC THỦY LỢI <br> Địa chỉ : 175 TÂY SƠN, ĐỐNG ĐA, HÀ NỘI.<br> Điện thoại: (024) 3852 2201 - Fax: (024) 3563 3351<br> Email: phonghcth@tlu.edu.vn<br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="address1">
-                            <p>
-                                TRƯỜNG ĐẠI HỌC THỦY LỢI <br> Địa chỉ : 175 TÂY SƠN, ĐỐNG ĐA, HÀ NỘI.<br> Điện thoại: (024) 3852 2201 - Fax: (024) 3563 3351<br> Email: phonghcth@tlu.edu.vn<br>
-                            </p>
-                        </div>
-                        <hr color="white">
-                        <div class="address1">
-                            <p>
-                                TRƯỜNG ĐẠI HỌC THỦY LỢI <br> Địa chỉ : 175 TÂY SƠN, ĐỐNG ĐA, HÀ NỘI.<br> Điện thoại: (024) 3852 2201 - Fax: (024) 3563 3351<br> Email: phonghcth@tlu.edu.vn<br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-</body>
+<?php
+    include('php/footer.php')
 
-</html>
+?>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>quản lí điểm sinh viên-thông tin khoa </title>
+    <title>Quản lý điểm sinh viên-thông tin khoa </title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
 </head>
@@ -21,142 +21,139 @@
             <div class="container-fluid">
                 <div id="menu">
                     <ul>
-                        <li><a href="index.html">Quản lí giảng viên </a></li>
-                        <li><a href="student.html">Quản lí sinh viên</a></li>
-                        <li><a href="point.html">quản lý bảng điểm</a></li>
-                        <li><a href="news.html">quản lý tin tức </a></li>
-                        <li><a href="class.html">quản lý lớp học </a></li>
-
-
-                        <li><a href="../project.html">trang chủ </a></li>
-                        <li><a href="#">đăng xuất </a></li>
+                        <li><a href="index.html">Quản lý giảng viên </a></li>
+                        <li><a href="student.html">Quản lý sinh viên</a></li>
+                        <li><a href="point.html">Quản lý bảng điểm</a></li>
+                        <li><a href="news.html">Quản lý tin tức </a></li>
+                        <li><a href="class.html">Quản lý lớp học </a></li>
+                        <li><a href="../project.html">Trang chủ </a></li>
+                        <li><a href="#">Đăng xuất </a></li>
                     </ul>
                 </div>
             </div>
         </div>
-            <div class="faculty">
-                <div class="title">
-                    <h2>Quản lí Bảng Điểm </h2>
-                </div>
-                <div class="information">
-                    <div class="container-fluid">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <label for="" style="font-weight: bold;"> khoa </label><br>
-                                    <select>
+        <div class="faculty">
+            <div class="title">
+                <h2>Quản lý Bảng Điểm </h2>
+            </div>
+            <div class="information">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="" style="font-weight: bold;"> Khoa </label><br>
+                                <select>
                                         <option selected="selected"></option>
-                                        <option>công nghệ thông tin</option>
+                                        <option>Công nghệ thông tin</option>
                                        
                                     </select>
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="" style="font-weight: bold;"> ngành đào tạo </label><br>
-                                    <select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="" style="font-weight: bold;"> Ngành đào tạo </label><br>
+                                <select>
                                         <option selected="selected"></option>
-                                        <option value=""> công nghệ thông tin</option>
-                                        <option> phân mềm</option>
-                                        <option>hệ thống</option>
+                                        <option value=""> Công nghệ thông tin</option>
+                                        <option> Phần mềm</option>
+                                        <option>Hệ thống</option>
 
                                     </select>
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="" style="font-weight: bold;"> môn học </label><br>
-                                    <select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="" style="font-weight: bold;"> Môn học </label><br>
+                                <select>
                                         <option selected="selected"></option>
-                                        <option>công nghệ web</option>
-                                        <option>phân tich thiết kế </option>
+                                        <option>Công nghệ web</option>
+                                        <option>Phân tích thiết kế </option>
                                     </select>
 
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="" style="font-weight: bold;"> lớp học </label><br>
-                                    <select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="" style="font-weight: bold;"> Lớp học </label><br>
+                                <select>
                                         <option selected="selected"></option>
-                                        <option>59th2</option>
-                                        <option>59ht </option>
+                                        <option>59TH2</option>
+                                        <option>59HT </option>
                                     </select> <br>
-                                    <label for="" style="font-weight: bold;"> học kỳ: </label> <br>
-                                    <select>
+                                <label for="" style="font-weight: bold;"> Học kỳ: </label> <br>
+                                <select>
                                         <option selected="selected"></option>
                                         <option>2018-2019 (1) </option>
                                         <option>2018-2019 (2) </option>
                                         <option>2017-2018 (1) </option>
                                         <option>2017-2018 (2) </option>
                                     </select>
-                                    <div class="btn">
-                                        <button type="submit" style="background-color:rgb(68, 233, 76)" style="text-align: right;"> tìm kiếm </button>
-                                    </div>
+                                <div class="btn">
+                                    <button type="submit" style="background-color:rgb(68, 233, 76)" style="text-align: right;"> Tìm kiếm </button>
                                 </div>
-                             
                             </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="table_teacher">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">sô thứ tự</th>
-                                <th scope="col">mã sinh viên</th>
-                                <th scope="col">họ tên</th>
-                                <th scope="col">ngày sinh</th>
-                                <th scope="col">điêm TP</th>
-                                <th scope="col">Điểm Thi</th>
-                                <th scope="col">Điểm TB</th>
-                                <th scope="col">Điểm chữ</th>
-                                
-                                <th scope="col">action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>175A07</td>
-                                <td>nguyễn văn dũng</td>
-                                <td>12/12/1999</td>
-                                <td>7</td>
-                                <td>7</td>
-                                <td>7</td>
-                                <td>D</td>
-                                <td><button type="button" class="btn btn-primary"><img src="../image/delete.png" width="15px" height="15px" alt=""></button>
-                                    <button type="button" class="btn btn-info"><img src="../image/repair2.png"width="15px" height="15px" alt=""></button>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>175A07</td>
-                                <td>nguyễn văn dũng</td>
-                                <td>12/12/1999</td>
-                                <td>7</td>
-                                <td>7</td>
-                                <td>7</td>
-                                <td>D</td>
-                                <td><button type="button" class="btn btn-primary"><img src="../image/delete.png" width="15px" height="15px" alt=""></button>
-                                    <button type="button" class="btn btn-info"><img src="../image/repair2.png"width="15px" height="15px" alt=""></button>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>175A07</td>
-                                <td>nguyễn văn dũng</td>
-                                <td>12/12/1999</td>
-                                <td>7</td>
-                                <td>7</td>
-                                <td>7</td>
-                                <td>D</td>
-                                <td><button type="button" class="btn btn-primary"><img src="../image/delete.png" width="15px" height="15px" alt=""></button>
-                                    <button type="button" class="btn btn-info"><img src="../image/repair2.png"width="15px" height="15px" alt=""></button>
-                                </td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
             </div>
+            <div class="table_teacher">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Số thứ tự</th>
+                            <th scope="col">Mã sinh viên</th>
+                            <th scope="col">Họ tên</th>
+                            <th scope="col">Ngày sinh</th>
+                            <th scope="col">Điểm TP</th>
+                            <th scope="col">Điểm Thi</th>
+                            <th scope="col">Điểm TB</th>
+                            <th scope="col">Điểm chữ</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>175A07</td>
+                            <td>Nguyễn Văn Dũng</td>
+                            <td>12/12/1999</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>B</td>
+                            <td><button type="button" class="btn btn-primary"><img src="../image/deleted.jpg" width="15px" height="15px" alt=""></button>
+                                <button type="button" class="btn btn-info"><img src="../image/repair2.jpg"width="15px" height="15px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>175A07</td>
+                            <td>Nguyễn Văn Dũng</td>
+                            <td>12/12/1999</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>B</td>
+                            <td><button type="button" class="btn btn-primary"><img src="../image/deleted.jpg" width="15px" height="15px" alt=""></button>
+                                <button type="button" class="btn btn-info"><img src="../image/repair2.jpg"width="15px" height="15px" alt=""></button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>175A07</td>
+                            <td>Nguyễn Văn Dũng</td>
+                            <td>12/12/1999</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>B</td>
+                            <td><button type="button" class="btn btn-primary"><img src="../image/deleted.jpg" width="15px" height="15px" alt=""></button>
+                                <button type="button" class="btn btn-info"><img src="../image/repair2.jpg"width="15px" height="15px" alt=""></button>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
 
 
 
