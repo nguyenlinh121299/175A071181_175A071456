@@ -17,7 +17,7 @@ body {
 .form {
     border: 1px solid #80808000;
     height: 570px;
-    width: 292px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,6 +53,7 @@ input[type="text"] {
     padding: 5px;
     width: 70%;
 }
+
  
 input#submit {
     padding: 7px;

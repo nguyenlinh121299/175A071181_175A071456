@@ -1,77 +1,44 @@
 <?php
- 
-    // Nếu không phải là sự kiện đăng ký thì không xử lý
-    if (!isset($_POST['txtUsername'])){
-        die('');
-    }
-     
-    //Nhúng file kết nối với database
-    include('ketnoi.php');
-          
-    //Khai báo utf-8 để hiển thị được tiếng việt
-    header('Content-Type: text/html; charset=UTF-8');
-          
-    //Lấy dữ liệu từ file dangky.php
-    $username   = addslashes($_POST['txtUsername']);
-    $password   = addslashes($_POST['txtPassword']);
-    $password   = addslashes($_POST['txtConfirm_Password']);
-    $fullname   = addslashes($_POST['txtFullname']);
-    $email      = addslashes($_POST['txtEmail']);
-   
-   
-    
-          
-    //Kiểm tra người dùng đã nhập liệu đầy đủ chưa
-    if (!$username || !$password || !$Confirm_Password || !$fullname || !$Email )
-    {
-        echo "Vui lòng nhập đầy đủ thông tin. <a href='javascript: history.go(-1)'>Trở lại</a>";
-        exit;
-    }
-          
-        // Mã khóa mật khẩu
-        $password = md5($password);
-          
-    //Kiểm tra tên đăng nhập này đã có người dùng chưa
-    if (mysql_num_rows(mysql_query("SELECT username FROM member WHERE username='$username'")) > 0){
-        echo "Tên đăng nhập này đã có người dùng. Vui lòng chọn tên đăng nhập khác. <a href='javascript: history.go(-1)'>Trở lại</a>";
-        exit;
-    }
-          
-    //Kiểm tra email có đúng định dạng hay không
-    if (!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$", $email))
-    {
-        echo "Email này không hợp lệ. Vui long nhập email khác. <a href='javascript: history.go(-1)'>Trở lại</a>";
-        exit;
-    }
-          
-    //Kiểm tra email đã có người dùng chưa
-    if (mysql_num_rows(mysql_query("SELECT email FROM member WHERE email='$email'")) > 0)
-    {
-        echo "Email này đã có người dùng. Vui lòng chọn Email khác. <a href='javascript: history.go(-1)'>Trở lại</a>";
-        exit;
-    }
+		include('ketnoi.php');
+      
+  			//lấy thông tin từ các form bằng phương thức POST
+  			$Email = $_POST["email"];
+              $password = $_POST["password"];
+              $cf_password = $_POST["cf_password"];
+ 		      $user_level = $_POST["user"];
+  			$full_name = $_POST["full_name"];
+  			//Kiểm tra điều kiện bắt buộc đối với các field không được bỏ trống
+              if (isset($_POST["submit"]) && $_POST["email"] != ""  &&  $_POST["password"] != "" &&  $_POST["cf_password"] != "" && $_POST["full_name"] != "" )
+               {
+			    if ($password != $cf_password)
+				{
+                    header("location: dangky.php");
+				}
+				$password = password_hash($password, PASSWORD_DEFAULT);
+				$queryinsert =" INSERT INTO user(email , password ,full_name,user_level) VALUES('$Email','$password','$full_name','$user_level')";
+				mysqli_query($conn,$queryinsert);
+				echo "đăng kí thành công";
+			
+				// $old = mysqli_query($conn, "SELECT * from  user where email = '$Email'");
 
-    //Lưu thông tin thành viên vào bảng
-    @$addmember = mysql_query("
-        INSERT INTO member (
-            username,
-            password,
-            fullname,
-            email
-        )
-        VALUE (
-            '{$username}',
-            '{$password}',
-            '{$fullname}',
-            '{$email}'
-           
-           
-        )
-    ");
-                          
-    //Thông báo quá trình lưu
-    if ($addmember)
-        echo "Quá trình đăng ký thành công. <a href='/'>Về trang chủ</a>";
-    else
-        echo "Có lỗi xảy ra trong quá trình đăng ký. <a href='dangky.php'>Thử lại</a>";
-?>
+
+				// if ($old )
+				//  {
+				
+				//   echo "tài khoản đã tồn tại";
+				// }
+				// else
+				// {
+					
+				// }
+			     	
+			  }
+			  else
+               {
+				   header("location: dangky.php");
+			   }
+		
+	  
+	
+    ?>
+   
