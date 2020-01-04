@@ -20,15 +20,15 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="logo">
-                            <a href="project.html"> <img src="./image/logo.png" alt=""></a>
+                            <a href="project.php"> <img src="./image/logo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="header_right">
                             <div class="topnav">
                                 <a href="#"> (+) </a>
-                                <a href="file_login/login.html"> Login </a>
-                                <a href="file_login/dangky.html"> Sign Up </a>
+                                <a href="file_login/login.php"> Login </a>
+                                <a href="file_login/dangky.php"> Sign Up </a>
                                 <a href="#"> <img src="image/vi.jpg" alt=""> </a>
                                 <a href="#"> <img src="image/en.jpg" alt=""> </a> <br>
                                 <hr width="100%" align="left">
