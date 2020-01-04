@@ -51,7 +51,7 @@
                                 <div class="col-md-3">
                                     <div class="n-left">
                                         <div class="img">
-                                            <a href="new.php"><img src="image/1_1.jpg" alt="" class="img-fluid"></a>
+                                            <a href="new.html"><img src="image/1_1.jpg" alt="" class="img-fluid"></a>
                                         </div>
                                     </div>
                                 </div>
