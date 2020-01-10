@@ -10,9 +10,9 @@
                     <div class="menu">
                         <nav class="nav-menu">
                             <ul>
-                                <li><a href="project.html"><i class="fas fa-home"></i></a>|</li>
-                                <li><a href="sinhvien.html">SINH VIÊN</a>|</li>
-                                <li><a href="Tintuc&thongbao.html">TIN TỨC & THÔNG BÁO</a>|</li>
+                                <li><a href="project.php"><i class="fas fa-home"></i></a>|</li>
+                                <li><a href="sinhvien.php">SINH VIÊN</a>|</li>
+                                <li><a href="Tintuc&thongbao.php">TIN TỨC & THÔNG BÁO</a>|</li>
                                 <li><a href="#">TUYỂN SINH</a>|</li>
                                 <li><a href="#">GIỚI THIỆU</a>|</li>
                                 <li><a href="#">ĐÀO TẠO</a>|</li>
@@ -31,11 +31,11 @@
                 <div class="row block-content">
                     <div class="col-md-3 left-block">
                         <p class="news-title">
-                            <a href="new.html">Tin tức và thông báo</a>
+                            <a href="new.php">Tin tức và thông báo</a>
                         </p>
                         <div class="list-news">
                             <ul>
-                                <li><a href="new.html">Tin tức</a></li>
+                                <li><a href="new.php">Tin tức</a></li>
                                 <hr>
                                 <li><a href="#">Thông báo</a></li>
                                 <hr>

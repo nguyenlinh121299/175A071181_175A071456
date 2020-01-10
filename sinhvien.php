@@ -10,9 +10,9 @@
                     <div class="menu">
                         <nav class="nav-menu">
                             <ul>
-                                <li><a href="project.html"><i class="fas fa-home"></i></a>|</li>
-                                <li><a href="sinhvien.html">SINH VIÊN</a>|</li>
-                                <li><a href="Tintuc&thongbao.html">TIN TỨC & THÔNG BÁO</a>|</li>
+                                <li><a href="project.php"><i class="fas fa-home"></i></a>|</li>
+                                <li><a href="sinhvien.php">SINH VIÊN</a>|</li>
+                                <li><a href="Tintuc&thongbao.php">TIN TỨC & THÔNG BÁO</a>|</li>
                                 <li><a href="#">TUYỂN SINH</a>|</li>
                                 <li><a href="#">GIỚI THIỆU</a>|</li>
                                 <li><a href="#">ĐÀO TẠO</a>|</li>

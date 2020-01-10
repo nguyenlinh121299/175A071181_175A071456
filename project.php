@@ -98,7 +98,7 @@
                             <div class="small-img">
                                 <img src="image/main-menu6.jpg" alt="">
                             </div>
-                            <span><a href="./file_login/login_student.html"> Đăng ký học</a></span>
+                            <span><a href="file_login/login_student.php"> Đăng ký học</a></span>
                         </div>
                         <div class="small">
                             <div class="small-img">

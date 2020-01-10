@@ -28,7 +28,7 @@
                             <div class="topnav">
                                 <a href="#"> (+) </a>
                                 <a href="file_login/login.php"> Login </a>
-                                <a href="file_login/dangky.php"> Sign Up </a>
+                                
                                 <a href="#"> <img src="image/vi.jpg" alt=""> </a>
                                 <a href="#"> <img src="image/en.jpg" alt=""> </a> <br>
                                 <hr width="100%" align="left">

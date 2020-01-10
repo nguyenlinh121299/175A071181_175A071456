@@ -1,26 +1,44 @@
 <?php
-    require('../mysql_connect.php');
-    if(isset($_POST['Login'])){
-        $email=$_POST['email'];
-        $pass=$_POST['password'];
-        $q = "SELECT * FROM user WHERE email='$email'";
-        $result=@mysqli_query($dbconn,$q);
-        $num_row=@mysqli_num_rows($result);
-        $row=@mysqli_fetch_array($result,MYSQLI_ASSOC);
+	include('../mysql_connect.php');
+    if (isset($_POST['login_submit'])) 
+    {
+		// lấy thông tin người dùng
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		$user_level = $_POST['level'];
+		//làm sạch thông tin, xóa bỏ các tag html, ký tự đặc biệt 
+		//mà người dùng cố tình thêm vào để tấn công
+		$email = strip_tags($email);
+		$email = addslashes($email);
+		$password = strip_tags($password);
+		$password = addslashes($password);
+		if(!filter_var($email, FILTER_VALIDATE_EMAIL ))
+		{
+			$error[] ="invalid email format";
+		}
+		if(empty($error))
+		{
+            $sql_user = "SELECT * FROM user WHERE email ='$email'";
+            $query = mysqli_query($dbconn,$sql_user);
+            $row = mysqli_fetch_assoc($query);
+            if($row>0)
+            {
+                $veryPass = password_verify($password,$row['password']);
+                if($veryPass && $row['user_level']==1)
+                {
+                    header("location:../admin/index.php");
+                }
+                else{
+                    header("location:../form_teacher/index.php");
+                }
+            }
+			
+		}
+	}
 
-        $passhash= $row['password'];
-        if(password_verify($pass, $passhash) && $num_row ==1)
-        {
-            session_start();
-            $_SESSION = mysqli_fetch_array($result, MYSQLI_ASSOC);
-            $_SESSION['user_level'] = (int) $row['user_level'];
-            echo $_SESSION['user_level'];
-            echo header('Location:../project.php');
-        }
+
 
 ?>
-
-
 <!DOCTYPE html>
 <html>
 
@@ -46,20 +64,23 @@
                     <form action="" method="POST">
                         <h1>Đăng nhập vào website</h1>
                         <div class="input-box">
-                            <i></i>
-                            <input type="text" placeholder="Nhập username">
+                            <input type="text" name="email" placeholder="Nhập email" value="Email">
                         </div>
                         <div class="input-box">
-                            <i></i>
-                            <input type="password" placeholder="Nhập mật khẩu">
+                            <input type="password" name="password" placeholder="Nhập mật khẩu" value="Password">
                         </div>
                         <div class="btn-box">
-                            <button><a href="login.html"  style="text-decoration: none; color: white;">  Admin</a></button>
-                            <button><a  href="teacher.html" style="text-decoration: none; color: white;"> Teacher </a > </button>
-                            <button type="submit">
+                            <label for=""class="check_lb">
+                            <select name="level" id="">
+                                <option value="1">admin</option>
+                                <option value="0">teacher</option>
+                            </select>
+                            </label>
+                            <button type="submit" name="login_submit">
                                 Đăng nhập
                             </button>
                         </div>
+                        
                     </form>
                 </div>
             </div>
