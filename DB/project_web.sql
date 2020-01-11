@@ -1,9 +1,9 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 28, 2019 lúc 04:56 PM
+-- Thời gian đã tạo: Th1 10, 2020 lúc 11:44 AM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `project_web`
+-- Cơ sở dữ liệu: `id12192994_projectweb`
 --
 
 -- --------------------------------------------------------
@@ -59,6 +59,14 @@ CREATE TABLE `majors` (
   `id_majors` int(11) NOT NULL,
   `majors_name` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `majors`
+--
+
+INSERT INTO `majors` (`id_majors`, `majors_name`) VALUES
+(12, 'Công nghệ thông tin'),
+(14, 'Kế toán');
 
 -- --------------------------------------------------------
 
@@ -105,9 +113,9 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`id_student`, `name`, `email`, `id_class`) VALUES
-('175A070042', 'Nguyễn Thu Huyền', 'huyennt72@wru.vn', '59TH2'),
 ('175A071114', 'Nguyễn Văn Nam', 'namnv72@wru.vn', '59TH1'),
-('175A071181', 'Đào Quang Minh', 'minhdq72@wru.vn', '59HT'),
+('175A071180', 'Trần Viết Kỷ', 'kytran@gmail.com', '59TH2'),
+('175A071182', 'Đào Quang Minh', 'minhdq72@gmail.com', '59TH2'),
 ('175A071456', 'Nguyễn Văn Linh', 'linhnv72@wru.vn', '59TH3');
 
 -- --------------------------------------------------------
@@ -137,6 +145,13 @@ CREATE TABLE `teacher` (
   `phone_number` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `teacher`
+--
+
+INSERT INTO `teacher` (`id_teacher`, `name_teacher`, `email`, `department_subject`, `phone_number`) VALUES
+('tlu.cse', 'Kiều Tuấn Dũng', 'kitudu@gmail.com', 'Công nghệ web', 396499444);
+
 -- --------------------------------------------------------
 
 --
@@ -146,9 +161,17 @@ CREATE TABLE `teacher` (
 CREATE TABLE `user` (
   `email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(65) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `registration_date` date NOT NULL,
   `user_level` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `user`
+--
+
+INSERT INTO `user` (`email`, `password`, `user_level`) VALUES
+('dqm@gmail.com', '$2y$10$0nRMxN7C4qDUH9QVG22N3eg4TbZJUyf/RdkMMant1T.LS1sQCmpzq', 1),
+('nguyenlinh@gmail.com', '$2y$10$bw5DXixRSZz1WZvZzaQ7h.vH1AFyfWSgbXhK8fNxJjFIy0lJAh346', 1),
+('quangminh@gmail.com', '$2y$10$fBbHFrJlm1oHfF/HexQsqut6COiMv2bmzms/VI60b71pwkbXDkWBG', 2);
 
 --
 -- Chỉ mục cho các bảng đã đổ
